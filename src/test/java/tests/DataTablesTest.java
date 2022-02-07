@@ -11,12 +11,12 @@ public class DataTablesTest extends BaseTest {
     public void dataTableTest() {
         driver.get(WebUrls.HEROKU_APP_TABLES_URL);
         //Check 'Last Name' element
-        Assert.assertEquals(driver.findElement(By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//preceding-sibling::td[text()='Bach']")).getText(), "Bach");
+        Assert.assertEquals(driver.findElement(By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//preceding-sibling::td[2]")).getText(), "Bach");
         //Check 'First Name' element
-        Assert.assertEquals(driver.findElement(By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//preceding-sibling::td[text()='Frank']")).getText(), "Frank");
+        Assert.assertEquals(driver.findElement(By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//preceding-sibling::td[1]")).getText(), "Frank");
         //Check 'Due' element
-        Assert.assertEquals(driver.findElement(By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//following-sibling::td[text()='$51.00']")).getText(), "$51.00");
+        Assert.assertEquals(driver.findElement(By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//following-sibling::td[1]")).getText(), "$51.00");
         //Check 'Web Site' element
-        Assert.assertEquals(driver.findElement(By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//following-sibling::td[text()='http://www.frank.com']")).getText(), "http://www.frank.com");
+        Assert.assertEquals(driver.findElement(By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//following-sibling::td[2]")).getText(), "http://www.frank.com");
     }
 }
