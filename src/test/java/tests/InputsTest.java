@@ -16,9 +16,9 @@ public class InputsTest extends BaseTest {
         inputField.sendKeys("10");
         //Check ARROW_UP
         inputField.sendKeys(Keys.ARROW_UP);
-        Assert.assertEquals(inputField.getAttribute("value"),"11","ARROW_UP doesn't work");
+        Assert.assertEquals(inputField.getAttribute("value"), "11", "ARROW_UP doesn't work");
         //Check ARROW_DOWN
         inputField.sendKeys(Keys.ARROW_DOWN);
-        Assert.assertEquals(inputField.getAttribute("value"),"10","ARROW_UP doesn't work");
+        Assert.assertEquals(inputField.getAttribute("value"), "10", "ARROW_UP doesn't work");
     }
 }
