@@ -36,11 +36,8 @@ public class AddRemoveElementsPage extends BasePage {
     public String checkDeleteButtonsOnPage (){
         String numbersOfButtons = buttons.getAttribute("childElementCount");
         return numbersOfButtons;
-
     }
-
-
-    }
+ }
 
 
 
