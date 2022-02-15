@@ -15,7 +15,7 @@ public class NotificationMessagesTest extends BaseTest {
         notificationMessagesPage.openNotificationMessagesPage();
         notificationMessagesPage.clickLinkClickHere();
         Assert.assertEquals(notificationMessagesPage.actualNotificationMessage().trim(),
-                            notificationMessagesPage.expectedNotificationMessage().trim(),
-                    " Action unsuccesful, please try again");
+                "Action successful",
+                " Action unsuccesful, please try again");
     }
 }

@@ -22,8 +22,4 @@ public class TyposPage extends BasePage {
     public String actualText() {
         return typosText.getText();
     }
-
-    public String expectedText() {
-        return "Sometimes you'll see a typo, other times you won't.";
-    }
 }

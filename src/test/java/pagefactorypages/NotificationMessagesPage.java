@@ -30,8 +30,4 @@ public class NotificationMessagesPage extends BasePage {
     public String actualNotificationMessage() {
         return notificationMessage.getText().replace("×", "");
     }
-
-    public String expectedNotificationMessage() {
-        return "Action successful";
-    }
 }

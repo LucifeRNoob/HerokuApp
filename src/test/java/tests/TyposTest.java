@@ -12,6 +12,6 @@ public class TyposTest extends BaseTest {
     public void typosTest() {
         typosPage = new TyposPage(driver);
         typosPage.openTyposPage();
-        Assert.assertEquals(typosPage.actualText(), typosPage.expectedText(), "Mistake in the word - won't");
+        Assert.assertEquals(typosPage.actualText(), "Sometimes you'll see a typo, other times you won't.", "Mistake in the word - won't");
     }
 }
