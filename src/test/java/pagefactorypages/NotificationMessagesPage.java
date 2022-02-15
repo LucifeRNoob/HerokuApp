@@ -24,7 +24,6 @@ public class NotificationMessagesPage extends BasePage {
 
     public void clickLinkClickHere (){
         clickHere.click();
-
     }
 
     public String actualNotificationMessage() {
